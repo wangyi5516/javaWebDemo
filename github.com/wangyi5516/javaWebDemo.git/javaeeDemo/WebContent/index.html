@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>用户登陆</title>
+</head>
+<body>
+	<h1>登陆系统</h1>
+	<br>
+	<form action="/javaeeDemo/LoginCl" method="post" enctype="multipart/form-data">
+		<div>
+			账号<input name="account" type="text"/>
+			<br/>
+		</div>
+				
+		<div>
+			密码<input name="password"  type="password"/>
+			<br/>
+		</div>	
+		
+		<div>
+			文件1	<input accept="image/*" name="file1" type="file"/>
+			<br/>
+		</div>	
+		
+		<div>
+			文件2	<input accept="image/*" name="file2" type="file"/>
+			<br/>
+		</div>		
+		
+		
+		<!-- <input type="file" accept="image/*" name="file" id="file" class="filestyle" 
+		data-icon="false" data-buttonText="上传图片" data-classbutton="btn btn-default" 
+		data-classinput="form-control inline input-s" 
+		onchange="javascript:setImagePreview(this, 'file','720px','360px');" /> -->
+				
+		
+		<input type="submit" value="提交" />
+	
+	</form>
+</body>
+</html>
