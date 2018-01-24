@@ -109,9 +109,7 @@ public class wechatMsgServlet extends HttpServlet {
 //            textMessage.setToUserName(fromUserName);
 //            textMessage.setFromUserName(toUserName);
 //            textMessage.setCreateTime(new Date().getTime());
-//            textMessage.setMsgType(MessageUtil.RESP_MESSAGE_TYPE_TEXT);
-            
-           
+//            textMessage.setMsgType(MessageUtil.RESP_MESSAGE_TYPE_TEXT); 
  
             // 文本消息
             if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_TEXT)) {
@@ -136,7 +134,7 @@ public class wechatMsgServlet extends HttpServlet {
                 imageMessage.setFromUserName(toUserName);
                 imageMessage.setCreateTime(new Date().getTime());
                 imageMessage.setMsgType(MessageUtil.RESP_MESSAGE_TYPE_IMAGE);
-                imageMessage.setPicUrl((String) requestMap.get("PicUrl"));               
+                //imageMessage.setPicUrl((String) requestMap.get("PicUrl"));               
                 // 将文本消息对象转换成xml
                 respXml = MessageUtil.messageToXml(imageMessage);
             }
